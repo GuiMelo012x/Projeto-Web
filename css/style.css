@@ -92,6 +92,10 @@ nav a {
     border-radius: 20px;
 }
 
+.main-photo{
+    border-radius: 25px;
+}
+
 .container {
     max-width: 1276px; 
     margin: auto;
