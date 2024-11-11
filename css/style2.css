@@ -1,0 +1,159 @@
+
+*,
+*:after,
+*:before { /* Reseta todo o html */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /* Cor principal do produto, fonte ou da marca */
+    --primary-color: #d824fcc5;
+}
+
+
+html { /* Padroniza o HTML em si*/
+    font-family:'Inter', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #d824fcc5;
+    width: 100%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); 
+    margin: 0 auto;
+    background-image: linear-gradient(transparent, rgb(88, 9, 192));
+}
+
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Logo à esquerda e o menu à direita */
+    align-items: center; /* Alinha a logo e o menu verticalmente */
+    padding: 10px 20px;
+    background-color: #2a2a2a;
+}
+
+
+.header-nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    gap: 16px;
+    list-style-type: none;
+    margin-right: 180px;
+}
+
+
+
+.header-nav a {
+    padding: 7.5px 11.5px;
+    border: solid 1px;
+    text-decoration: none;
+    color: #d824fcc5;
+}
+
+.header-nav a:hover{
+    background-color: black;
+    transition: .2s;
+}
+
+.header img {
+    max-height: 100px; /* Limita a altura da logo para ajustar o tamanho da navbar */
+    margin-left: 200px;
+}
+
+
+
+.price {
+    display: flex;
+    gap: 16px; 
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+
+.kit-price {
+    flex: 0 1 auto; /* Não deixa os planos se esticarem muito */
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;
+    display: flex;
+    flex-direction: column;
+    width: 300px; /* Define uma largura fixa para os itens */
+}
+
+.kit-price-title {
+    text-transform: uppercase;
+    border-bottom: 2px solid #d824fcc5;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); /* Sombra suave no texto */
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.kit-price p {
+    margin-top: 10px;
+}
+
+.kit-price-amount {
+    font-size: 34px;
+}
+
+.kit-features {
+    margin: 0 0 35px;
+    color: #b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;
+    flex: 1;
+}
+
+.kit-features li::marker {
+    color: #d824fcc5;
+}
+
+.buy-now {
+    text-decoration: none;
+    color: #d824fcc5;
+    background-color: #2a2a2a;
+    border: solid 2px #d824fcc5;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); /* Sombra suave no texto */
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 10px;
+    text-align: center;
+}
+
+.buy-now:hover {
+    background-color: black;
+    transition: .2s;
+}
+
+
+.footer-container{
+    padding-top: 1px;
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
+
+.footer {
+    font-size: 16px; 
+    text-align: center;
+    padding: 45px; 
+}
+
+
+
+.footer a {
+    color: inherit;
+}

@@ -39,6 +39,46 @@ nav a {
     text-transform: uppercase; /* Transforma todos os html que estão em upper para maiúsculo.*/
 }
 
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* Header */
+.header_nav a {
+    padding: 7.5px 11.5px;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+.header_nav ul {
+    display: flex;
+    gap: 6px; 
+    list-style-type: none;
+}
+
+.header_nav a:hover {
+    background-color: black;
+}
+
+
+.header_nav ul {
+    gap: 10px;
+    margin-right: 150px;
+    
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Distribui a logo e o menu nas extremidades */
+    align-items: center; /* Alinha verticalmente no centro */
+    padding: 5px 50px;
+}
+
+.header img {
+    max-height: 100px; /* Limita a altura da logo para ajustar o tamanho da navbar */
+    margin-left: 200px;
+}
+
 .btn {
     background-color:#d824fcc5;
     border-radius: 7px;
@@ -58,15 +98,7 @@ nav a {
 
 
 
-.header{
-    padding-top: 1px;
-    background-color: #2a2a2a;
-    color: #fafafa;
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
+
 
 .main-container{
     padding-top: 1px;
@@ -96,10 +128,7 @@ nav a {
     border-radius: 25px;
 }
 
-.container {
-    max-width: 1276px; 
-    margin: auto;
-}
+
 
 .section_title {
     padding: 70px 0; 
@@ -118,39 +147,16 @@ nav a {
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--primary-color);
-    padding: 20px 0; 
+    padding: 0px 0px; /* Reduz o padding para diminuir a altura */
+    background-color: #2a2a2a;
+    color: #fafafa;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
-.header_nav a {
-    padding: 7.5px 11.5px;
-    border: solid 1px;
-    text-decoration: none;
-}
 
-.header_nav ul {
-    display: flex;
-    gap: 6px; 
-    list-style-type: none;
-}
-
-.header_nav a:hover {
-    background-color: black;
-}
-
-.wrapperContainer-hero {
-    background-image: linear-gradient(transparent, rgb(88, 9, 192));
-}
-
-.heroBanner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 200px; 
-}
 
 .title {
     margin-bottom: 40px; 
