@@ -132,6 +132,7 @@ body {
     font-weight: bold;
     padding: 16px 10px;
     text-align: center;
+    cursor: not-allowed;
 }
 
 .buy-now:hover {
