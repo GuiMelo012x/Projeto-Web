@@ -49,6 +49,8 @@ Contato - Volta para a página home (index.html)
 "Esgotado!" - Como ainda não temos função para compras nem nada do tipo, o botão estará indisponível, com a função "not-allowed" no css. Será depois implementado algo com o JavaScript. No entanto, ao clicar, volta para a "index2.html"
 
 
+<hr>
+
 ### Integrantes: 
 
 Guilherme Melo
