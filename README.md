@@ -11,6 +11,11 @@ Ao clicar em botões ao longo do site, o usuário é redirecionado para uma seç
 
 Neste projeto, foi utilizado HTML e CSS para a estruturação e estilização do site. Futuramente, serão implementadas funções dinâmicas com JavaScript.
 
+## Figma: 
+
+https://www.figma.com/design/i4D1KMnnf9hZ0QgiN4e6zG/Aromata-Vitae?node-id=0-1&t=vzAn6n0bGQM6xTzi-1
+
+
 # Funcionalidades:
 ## Home:
 #### Botões no header:
