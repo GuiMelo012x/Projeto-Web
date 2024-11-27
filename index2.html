@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="scripts/scripts2.js" defer></script>
     <title>Compre Já - Aromata Vitae</title>
 
     <link rel="stylesheet" href="css/style2.css">
@@ -41,7 +42,7 @@
                 <li>1 Portavela</li>
                 <li>1 Cartão com instruções de uso</li>
             </ul>
-            <a href="#" class="buy-now">ESGOTADO!</a>
+            <a href="#" class="buy-now unavailable">ESGOTADO</a>
         </div>
 
         <div class="kit-price">
@@ -53,7 +54,7 @@
                 <li>1 Mini Spray</li>
                 <li>1 Cartão com instruções de uso</li>
             </ul>
-            <a href="#" class="buy-now">ESGOTADO!</a>
+            <a href="#" class="buy-now">Compre Já!</a>
         </div>
 
         <div class="kit-price">
@@ -66,12 +67,54 @@
                 <li>3 Frascos de óleos essenciais de 30ml à sua escolha</li>
                 <li>1 Cartão com instruções de uso</li>
             </ul>
-            <a href="#" class="buy-now">ESGOTADO!</a>
+            <a href="#" class="buy-now">Compre Já!</a>
         </div>
     </section>
     <div class="footer-container">
         <footer class="footer">Aproveite o melhor da vida com Aromata Vitae</footer>
     </div>
+
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Adicionar ao Carrinho</h2>
+            <p id="productName"></p>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" min="1" value="1">
+            <div class="cart-modal-buttons">
+                <button id="confirmButton">Confirmar</button>
+                <button id="cancelButton">Voltar</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart" class="cart-container">
+        <h2>Carrinho de Compras</h2>
+        <div id="cartItems" class="cart-items">
+            <p>Seu carrinho está vazio.</p>
+        </div>
+        <div class="cart-footer">
+            <p>Total: <span id="cartTotal">R$ 0,00</span></p>
+            <button id="checkoutButton" class="checkout-button">Finalizar Compra</button>
+        </div>
+    </div>
+    
+    <div id="emailModal" class="cart-modal">
+        <div class="cart-modal-content">
+            <h2>Produto Indisponível</h2>
+            <p>Digite seu e-mail para ser notificado assim que o produto estiver disponível:</p>
+            <input type="email" id="emailInput" placeholder="Seu e-mail" required>
+            <div class="cart-modal-buttons">
+                <button id="submitEmail">Enviar</button>
+                <button id="closeEmailModal">Fechar</button>
+            </div>
+            <p id="emailMessage" style="color: green; display: none;">Obrigado! Você receberá um e-mail assim que o produto estiver disponível.</p>
+        </div>
+    </div>
+    
+    <button id="cartToggle">Carrinho</button>
+
+    
+
 </body>
 
 </html>
