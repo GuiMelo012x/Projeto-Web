@@ -49,20 +49,41 @@ document.addEventListener('DOMContentLoaded', () => {
     // Confirmar a quantidade e adicionar ao carrinho
     confirmButton.addEventListener('click', () => {
         const quantity = parseInt(quantityInput.value);
+    
         if (quantity > 0 && selectedProduct) {
+            // Verifica se o item já existe no carrinho
             const existingItem = cart.find(item => item.name === selectedProduct.name);
             if (existingItem) {
-                existingItem.quantity += quantity;
+                existingItem.quantity += quantity; // Atualiza a quantidade do item
             } else {
-                cart.push({ ...selectedProduct, quantity });
+                cart.push({ ...selectedProduct, quantity }); // Adiciona um novo item ao carrinho
             }
-
-            updateCart();
+    
+            updateCart(); // Atualiza o carrinho na interface
             cartModal.style.display = 'none'; // Fecha o modal
+    
+            // Adiciona um feedback visual para o usuário
+            const confirmationMessage = document.createElement('div');
+            confirmationMessage.textContent = 'Produto adicionado ao carrinho!';
+            confirmationMessage.style.position = 'fixed';
+            confirmationMessage.style.bottom = '20px';
+            confirmationMessage.style.right = '20px';
+            confirmationMessage.style.backgroundColor = '#28a745';
+            confirmationMessage.style.color = '#fff';
+            confirmationMessage.style.padding = '10px 20px';
+            confirmationMessage.style.borderRadius = '5px';
+            confirmationMessage.style.zIndex = '1000';
+            document.body.appendChild(confirmationMessage);
+    
+            // Remove a mensagem após 3 segundos
+            setTimeout(() => {
+                document.body.removeChild(confirmationMessage);
+            }, 3000);
         } else {
             alert('Por favor, selecione uma quantidade válida.');
         }
     });
+    
 
     // Cancelar a seleção de quantidade
     cancelButton.addEventListener('click', () => {
