@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Frete</title>
+
+    <!-- Link para o CSS principal do site -->
+    <link rel="stylesheet" href="css/frete.css">
+
+    <!-- Link para o Leaflet CSS (necessário para o mapa) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html"><img src="imagens/logo-sem-fundo.png" alt="Logo"></a>
+            <nav class="header_nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Produtos</a></li>
+                    <li><a href="#about">Sobre nós</a></li>
+                    <li><a href="#contatos">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Calculadora de Frete</h1>
+        <p>Insira seu CEP para verificar o preço e disponibilidade do frete:</p>
+        <form id="freteForm">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" placeholder="Ex: 50000-000" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+
+        <!-- Contêiner para o mapa -->
+        <div id="map" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+    </main>
+
+    <!-- Link para o Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Link para o arquivo JS do projeto -->
+    <script src="scripts/frete.js" defer></script>
+</body>
+</html>

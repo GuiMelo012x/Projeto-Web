@@ -1,0 +1,171 @@
+/* Ajustes globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Fundo neutro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #333; /* Preto */
+    padding: 15px 0;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-container a img {
+    height: 60px; /* Tamanho maior para o logotipo */
+}
+
+.header_nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.header_nav li {
+    margin: 0 15px; /* Mais espaçamento entre os itens */
+}
+
+.header_nav a {
+    text-decoration: none;
+    color: #9b59b6; /* Roxo principal */
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+.header_nav a:hover {
+    background-color: #9b59b6;
+    color: white;
+    border-color: #9b59b6;
+}
+
+/* Container Principal */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+h1 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #9b59b6; /* Linha decorativa roxa */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+form label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+form input[type="text"] {
+    width: 70%;
+    max-width: 400px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus {
+    border-color: #9b59b6; /* Roxo no foco */
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #9b59b6; /* Roxo principal */
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #732d91; /* Roxo escuro no hover */
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#resultado p.success {
+    color: #28a745; /* Verde para sucesso */
+}
+
+#resultado p.error {
+    color: #dc3545; /* Vermelho para erro */
+}
+
+/* Mapa */
+#map {
+    width: 100%;
+    height: 400px;
+    margin-top: 30px;
+    border: 2px solid #9b59b6; /* Borda roxa */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form input[type="text"] {
+        width: 90%;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_nav ul {
+        flex-direction: column;
+    }
+
+    .header_nav li {
+        margin: 10px 0;
+    }
+}
