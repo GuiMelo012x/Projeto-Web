@@ -70,27 +70,19 @@ CEP - Pede o CEP do usuário, e calcula quanto ficará o frete de acordo com a l
 
 ### Histórias:
 
-Descrição: Como cliente da loja virtual Aromata Vitae, quero navegar facilmente entre as páginas, visualizar os produtos disponíveis e conhecer mais sobre a loja, para que eu possa decidir sobre uma possível compra.
+Descrição: Como cliente da loja virtual Aromata Vitae, quero navegar facilmente entre as páginas, visualizar os produtos disponíveis e indisponíveis, calcular o preço do frete e conhecer mais sobre a loja, para que eu possa decidir sobre uma possível compra, e saber sobre produtos em re-estoque.
 
 Critérios de Aceitação:
 
-O menu de navegação deve estar disponível no topo do site, com links claros para as seções "Home", "Produtos", "Sobre Nós" e "Contato".
+O menu de navegação deve estar disponível no topo do site, com links claros para as seções "Home", "Produtos", "Sobre Nós", "Contato" e "Frete".
 
 A página inicial deve exibir um banner com um botão de chamada para ação, levando o cliente diretamente para a página de produtos.
 
 A página "Produtos" deve exibir uma lista de kits com informações detalhadas, como descrição, preço e itens inclusos.
 
-Os produtos esgotados devem ser claramente indicados e seus botões desativados.
+A seção "Contato" deve incluir um mapa interativo e informações de contato claras (endereço, telefone e e-mail), junto com outra seção de  "Frete", que deve incluir um sistema que calcule quanto ficará a taxa de entrega.
 
-A seção "Sobre Nós" deve conter informações relevantes sobre a loja, os valores e o processo de criação dos produtos.
-
-A seção "Contato" deve incluir um mapa interativo e informações de contato claras (endereço, telefone e e-mail).
-
-A seção "Frete" deve incluir um sistema que calcule quanto ficará a taxa de entrega.
-
-O carrinho deve ter funções de adicionar, remover e comprar.
-
-Os itens disponíveis devem ter a função de selecionar a quantidade do item.
+O carrinho deve ter funções de adicionar, remover e comprar, e os itens disponíveis devem ter a função de selecionar a quantidade do item.
 
 Quando o usuário quiser comprar um item esgotado, deve ser pedido o e-mail dele, para que assim possamos avisá-lo quando o item chegar.
 
