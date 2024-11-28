@@ -6,25 +6,31 @@
     <title>Calculadora de Frete</title>
 
     <!-- Link para o CSS principal do site -->
-    <link rel="stylesheet" href="css/frete.css">
+    <link rel="stylesheet" href="css/style3.css">
 
     <!-- Link para o Leaflet CSS (necessário para o mapa) -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
-        <div class="header-container">
-            <a href="index.html"><img src="imagens/logo-sem-fundo.png" alt="Logo"></a>
-            <nav class="header_nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index2.html">Produtos</a></li>
-                    <li><a href="#about">Sobre nós</a></li>
-                    <li><a href="#contatos">Contatos</a></li>
-                </ul>
-            </nav>
+        <div class="header__logo">
+            <a href="index.html">
+                <img src="imagens/logo-sem-fundo.png" alt="Logo do Aroma Vitae" class="logo-img">
+            </a>
         </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html" class="header__nav--active">Produtos</a></li>
+                <li><a href="index.html" href="#about">Sobre nós</a></li>
+                <li><a href="index.html">Contato</a></li>
+                <li><a href="index3.html">Frete</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Conteúdo Principal -->
     <main class="container">
         <h1>Calculadora de Frete</h1>
         <p>Insira seu CEP para verificar o preço e disponibilidade do frete:</p>
@@ -37,11 +43,16 @@
 
         <!-- Contêiner para o mapa -->
         <div id="map" style="width: 100%; height: 400px; margin-top: 20px;"></div>
+
+
     </main>
+    <div class="footer-container">
+        <footer class="footer">Aproveite o melhor da vida com Aromata Vitae</footer>
+    </div>
 
     <!-- Link para o Leaflet JS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <!-- Link para o arquivo JS do projeto -->
-    <script src="scripts/frete.js" defer></script>
+    <script src="scripts/scripts3.js" defer></script>
 </body>
 </html>

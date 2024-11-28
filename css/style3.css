@@ -1,57 +1,87 @@
-/* Ajustes globais */
+
+*,
+*:after,
+*:before { /* Reseta todo o html */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root { /* Cor principal do produto, fonte ou da marca */
+    --primary-color: #d824fcc5;
+}
+
+
+html { /* Padroniza o HTML em si*/
+    font-family:'Inter', sans-serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9; /* Fundo neutro */
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-/* Cabeçalho */
-.header {
-    background-color: #333; /* Preto */
-    padding: 15px 0;
-    color: white;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
+    background-color: #ffffff;
+    color: #d824fcc5;
+    width: 100%;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); 
     margin: 0 auto;
-    padding: 0 20px;
+    background-image: linear-gradient(transparent, rgb(88, 9, 192));
 }
 
-.header-container a img {
-    height: 60px; /* Tamanho maior para o logotipo */
+.main-title {
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;
 }
 
-.header_nav ul {
-    list-style: none;
+.header {
     display: flex;
-    margin: 0;
-    padding: 0;
+    justify-content: space-between; /* Logo à esquerda e o menu à direita */
+    align-items: center; /* Alinha a logo e o menu verticalmente */
+    padding: 10px 20px;
+    background-color: #2a2a2a;
 }
 
-.header_nav li {
-    margin: 0 15px; /* Mais espaçamento entre os itens */
-}
 
-.header_nav a {
-    text-decoration: none;
-    color: #9b59b6; /* Roxo principal */
-    font-weight: bold;
+.header-nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    gap: 16px;
+    list-style-type: none;
+    margin-right: 180px;
     font-size: 16px;
-    border: 1px solid transparent;
-    padding: 5px 10px;
-    transition: all 0.3s ease;
 }
 
-.header_nav a:hover {
-    background-color: #9b59b6;
-    color: white;
-    border-color: #9b59b6;
+
+
+.header-nav a {
+    padding: 7.5px 11.5px;
+    border: solid 1px;
+    text-decoration: none;
+    color: #d824fcc5;
+}
+
+.header-nav a:hover{
+    background-color: black;
+    transition: .2s;
+}
+
+.header img {
+    max-height: 100px; /* Limita a altura da logo para ajustar o tamanho da navbar */
+    margin-left: 200px;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header_nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 
 /* Container Principal */
@@ -155,17 +185,23 @@ form button:hover {
     #map {
         height: 300px;
     }
+}
 
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-    }
 
-    .header_nav ul {
-        flex-direction: column;
-    }
+.footer-container{
+    padding-top: 1px;
+    background-color: #2a2a2a;
+    color: #fafafa;
+}
 
-    .header_nav li {
-        margin: 10px 0;
-    }
+.footer {
+    font-size: 16px; 
+    text-align: center;
+    padding: 45px; 
+}
+
+
+
+.footer a {
+    color: inherit;
 }
