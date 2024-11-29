@@ -35,11 +35,11 @@ Sobre Nós - Vai para a seção de "sobre" (seção que seria o id #about)
 
 Contato - Vai para a seção de "contatos" e mostra a localização (seção que seria o id #contato)
 
-Frete - Vai para a seçã ode calcular o frete.
+Frete - Vai para a seção de calcular o frete.
 
 #### Botão no Banner Principal:
 
-"Encomende Já"- vai para a seção de compra (index2.html)
+"Encomende Já"- Vai para a seção de compra (index2.html)
 
 #### Botão de Principais Produtos:
 
@@ -54,6 +54,7 @@ API do Google que, por meio do link do endereço, coloca um "quadro" com a local
 #### Botões no Banner Principal:
 
 "Compre Já" - Adiciona a quantidade desejada no carrinho.
+
 "Esgotado!" - Avisa que não está disponível e pede um prompt para o usuário digitar seu e-mail, para notificá-lo quando o produto chegar.
 
 #### Carrinho:
